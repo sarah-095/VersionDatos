@@ -1,30 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	<meta name="viewport" id="viewport" content="width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;"/>
 
-	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-	<script type="text/javascript" charset="utf-8">
-		
-		function onBodyLoad() {
-			doument.addEventListener("deviceready", onDeviceReady, false);
-		}
+<! DOCTYPE html>
+< html >
+< cabeza >
+< meta  http-equiv = " Content-type "  content = " text / html; charset = utf-8 " >
+< meta  name = " viewport "  id = " viewport "  content = " width = device-width, height = device-height, initial-scale = 1.0, maximum-scale = 1.0,
+escalable por el usuario = no; " />
 
-		function onDeviceReady() {
-		//Get the appInfo DOM element
-		var element = document.getElementById('appInfo');
-		//replace it with specific information about the device
-		//running the application
-		element.innerHTML = 'PhoneGap (version ' + 
-		device.phonegap + ') <br/>' + device.platform + ' ' +
-		device.name + ' (version ' + device.version + ').';
-		}
-	</script>
-</head>
-<body onload="onBodyLoad()">
-	<h1>HelloWorld 3</h1>
-	<p>This is a PhoneGap application that makes calls to the PhoneGap APIs.</p>
-	<p id="appInfo">Waiting for PhoneGap Initialization to complete</p>
-</body>
-</html>
+< script  type = " text / javascript "  charset = " utf-8 "  src = " phonegap.js " > </ script >
+< script  type = " text / javascript "  charset = " utf-8 " >
+function  onBodyLoad () {
+documento . addEventListener ( " deviceready " , onDeviceReady,
+falso );
+}
+function  onDeviceReady () {
+// Obtenga el elemento appInfo DOM
+elemento var =  documento . getElementById ( ' appInfo ' );
+// reemplazarlo con información específica sobre el dispositivo
+// ejecutando la aplicación
+elemento . innerHTML  =  ' PhoneGap (versión '  +
+dispositivo . cordova  +  ' ) <br /> '  +  dispositivo . plataforma  +  '  '  +
+dispositivo . modelo  +  ' (versión '  +  dispositivo . versión  +  ' ). ' ;
+}
+</ script >
+</ cabeza >
+
+< body  onload = " onBodyLoad () " >
+< h1 > HelloWorld3 </ h1 >
+< p > Esta es una aplicación PhoneGap que realiza llamadas al
+API de PhoneGap. </ P >
+< p  id = " appInfo " > Esperando la inicialización de PhoneGap para
+completa </ p >
+</ cuerpo >
+</ html >
